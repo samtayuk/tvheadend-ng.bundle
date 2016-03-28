@@ -1,0 +1,15 @@
+{
+  "attention": "Attención",
+  "error": "Error",
+  "error_request_failed": "¡La petición ha fallado! Por favor, compruebe los ajustes de los canales y el estado de TVHeadend.",
+  "error_no_tags": "Por favor, añada etiquetas a las cabeceras de sus canales de TV. De lo contrario los filtros no están disponibles.",
+  "error_connection": "¡Error de conexión! Por favor, comprueve su configuración.",
+  "error_no_anonymous": "¡Error de conexión! El login Anonimo no esta permitido en este/os canales.",
+  "error_api_version": "Versión de API incorrecta. Este plug-in requiere otra versión de TVHeadend.",
+  "error_unknown": "¡error desconocido!",
+  "allchans": "Todos los canales",
+  "tagchans": "Categorías",
+  "preferences": "Ajustes",
+  "recordings": "Grabaciones",
+  "error_no_recordings": "No se an encontrado grabaciones en TVHeadend."
+}
