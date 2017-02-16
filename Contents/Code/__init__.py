@@ -121,7 +121,7 @@ def getTVHeadendJson(apirequest, arg1):
 
 		json_data = "" 
 		try:
-			json_data = JSON.ObjectFromURL(encoding='utf-8', url=url, headers=headers, values=None)
+			json_data = JSON.ObjectFromURL(encoding='ISO-8859-1', url=url, headers=headers, values=None)
 		except:
 			try:
 				json_data = JSON.ObjectFromURL(url=url, headers=headers, values=None)
