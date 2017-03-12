@@ -389,7 +389,7 @@ def createTVChannelObject(channel, chaninfo, cproduct, cplatform, container = Fa
 		duration = chaninfo['epg_duration']
 
 	# Build streaming url.
-	url_structure = 'play/stream/channel'
+	url_structure = 'stream/channel'
 	url = 'http://%s:%s@%s:%s%s%s/%s' % (Prefs['tvheadend_user'], Prefs['tvheadend_pass'], Prefs['tvheadend_host'], Prefs['tvheadend_web_port'], Prefs['tvheadend_web_rootpath'], url_structure, id)
 
 	# Create and return MediaContainer.
