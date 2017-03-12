@@ -352,7 +352,7 @@ def addMediaObject(mco, vurl):
 	if debug == True: Log("Creating MediaObject for streaming with URL: " + vurl)
 	return mco
 
-def createTVChannelObject(channel, chaninfo, cproduct, cplatform, container = False, checkFiles = 0):
+def createTVChannelObject(channel, chaninfo, cproduct, cplatform, container = False, checkFiles = 0, includeBandwidths=0):
 	if debug == True: Log("Creating TVChannelObject. Container: " + str(container))
 	name = channel['name'] 
 	id = channel['uuid']
@@ -428,7 +428,7 @@ def createTVChannelObject(channel, chaninfo, cproduct, cplatform, container = Fa
 		return mco
 	return mco
 
-def createRecordingObject(recording, cproduct, cplatform, container = False):
+def createRecordingObject(recording, cproduct, cplatform, container = False, includeBandwidths=0):
 	if debug == True: Log("Creating RecordingObject. Container: " + str(container))
 	name = recording['disp_title']
 	id = recording['uuid'] 
