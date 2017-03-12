@@ -3,7 +3,7 @@ json = simplejson
 
 # Static text. 
 TEXT_NAME = 'TV-Headend Next Generation'
-TEXT_TITLE = 'TV-Headend' 
+TEXT_TITLE = 'TV-Headend2' 
 
 # Image resources.
 ICON_DEFAULT = 'icon-default.png'
@@ -345,8 +345,8 @@ def addMediaObject(mco, vurl):
 			optimized_for_streaming = True,
 			#parts = [PartObject(key = vurl)],
 			parts = [PartObject(key = Callback(PlayMedia, url=vurl))],
-			#video_codec = VideoCodec.H264,
-			#audio_codec = AudioCodec.AAC,
+			video_codec = VideoCodec.H264,
+			audio_codec = AudioCodec.AAC,
 		)
 	mco.add(media)
 	if debug == True: Log("Creating MediaObject for streaming with URL: " + vurl)
